@@ -35,10 +35,6 @@ const ResponsiveAppBar = () => {
     const router = useRouter()
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
     const [open, setOpen] = React.useState(false);
-    const handleOpen = () => {
-        setAnchorElNav(null);
-        setOpen(true);
-    };
 
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const handleClose = () => setOpen(false);
@@ -76,7 +72,7 @@ const ResponsiveAppBar = () => {
                             ABROAD PREP
                         </Typography>
 
-                        <Box sx={{ flexGrow: 32, display: { xs: "flex", md: "none" } }}>
+                        <Box sx={{ flexGrow: 48, display: { xs: "flex", md: "none" } }}>
                             <IconButton
                                 size="large"
                                 aria-label="account of current user"
@@ -126,11 +122,11 @@ const ResponsiveAppBar = () => {
                             component="a"
                             href="/"
                             className="ContactIcon"
-                            sx={{ flexGrow: 32, display: { xs: "flex", md: "none" }, fontFamily: "Karla", textDecoration: "none", color: "white" }}
+                            sx={{ flexGrow: 48, display: { xs: "flex", md: "none" }, fontFamily: "Karla", textDecoration: "none", color: "white" }}
                         >
                             ABROAD PREP
                         </Typography>
-                        <Box sx={{flexGrow:1, display: { xs: "flex", md: "none" } }}>
+                        <Box sx={{flexGrow:0, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -176,35 +172,10 @@ const ResponsiveAppBar = () => {
                             >
                                 Courses Details
                             </Button>}
-                            <Button
-                                onClick={handleOpen}
-                                sx={{ my: "auto", color: "white", display: "block", fontFamily: "Karla" }}
-                                className="button-bar-hold"
-                            >
-                                Contact us
-                            </Button>
                         </Box>
                     </Toolbar>
                 </Container>
             </AppBar>
-            <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
-                <Box sx={style}>
-                    <Typography id="modal-modal-title" variant="h6" textAlign="center" component="h2">
-                        Contact us
-                    </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        Facebook: <a href="https://www.facebook.com/Abroad-prep-102955072386401">Abroad-Prep</a><br/>
-                        Instagram: <a href="https://www.instagram.com/abroad.prep/">AbroadPrep Official</a><br/>
-                        Email: abroad.prepa@gmail.com<br/>
-                        Paypal:
-                    </Typography>
-                </Box>
-            </Modal>
         </>
     );
 };

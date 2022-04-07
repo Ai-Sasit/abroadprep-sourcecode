@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import img1 from "../images/mon.jpg"
-import img2 from "../images/di.jpg"
-import img3 from "../images/tri.jpg"
-import img4 from "../images/quad.jpg"
+import img1 from "../images/course1.jpg"
+import img2 from "../images/course2.jpg"
+import img3 from "../images/course3.jpg"
+import img4 from "../images/course4.jpg"
 
 import Header from "../components/Header";
 import Contactbar from "../components/Contactbar";
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
         <title>Abroad Prep</title>
         <meta
           name="description"
-          content="Abroad-prep leverages your potential to fly high."
+          content="Manner, Etiquette, Finishing, Grooming, Confidence, International Standard, Training, Preparation"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
                 leverages your potential to fly high.
               </Typography>
               <Typography
-                sx={{ mt: 2, fontFamily: "Karla", width:"86%", fontSize: "3vmin" }}
+                sx={{ mt: 2, fontFamily: "Karla", width:{md:"86%",xs:"100%"}, fontSize: "3vmin" }}
               >
                 We believe that you are unique and can be your own best style.
                 Abroad-prep training courses enhance confidence and fulfill your

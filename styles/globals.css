@@ -35,7 +35,7 @@ a {
   margin-right: 10vmin;
   -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.842));
   filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.836));
-  transform: rotate(-40deg);
+  /* transform: rotate(-40deg); */
 }
 
 .pageimage {

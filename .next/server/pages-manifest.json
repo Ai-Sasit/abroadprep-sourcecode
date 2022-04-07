@@ -1,0 +1,11 @@
+{
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html",
+  "/course2": "pages/course2.html",
+  "/_app": "pages/_app.js",
+  "/course1": "pages/course1.html",
+  "/course4": "pages/course4.html",
+  "/course3": "pages/course3.html",
+  "/": "pages/index.html"
+}

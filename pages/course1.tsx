@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import Header from "../components/Header";
 import Contactbar from "../components/Contactbar";
 import { styled } from "@mui/material/styles";
-import img1 from "../images/mon.jpg"
+import img1 from "../images/course1.jpg"
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import Head from "next/head";
